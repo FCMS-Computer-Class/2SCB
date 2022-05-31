@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title> Ayden my second website my guy </title>
+<style>
+        body{background-color:#0046FF;color:#00FF00;}
+        hr{border:15px solid hotpink;}
+        h1{color:white}
+    </style>
+</head>
+
+<body>  
+<button><h3><a href="https://sites.google.com/foothillsschool.net/computerclassa2/home">Computer Class A</a></h3></button>
+<center><h1> Ayden is cool </h1><hr></center>
+<center><img src="https://i.ytimg.com/vi/dEtO8lVZ01Y/maxresdefault.jpg"width="500px"></center>
+   
+<center><canvas id=myCanvas width=300 height=300 style="background-color: pink"> </canvas>
+<canvas id=myCanvas1 width=300 height=300 style="background-color: pink"> </canvas>
+ </center>
+<script>
+    var ctx = myCanvas.getContext("2d")
+  ctx.fillRect(10, 10, 20, 20);
+
+ctx.fillRect(10, 10, 20, 20);
+
+<!--this is how you make a rectangle (below this)-->
+ctx.strokeStyle="purple";
+
+ctx.lineWidth=6;
+
+ctx.strokeRect(50,50,20,40);
+
+ctx.fillStyle="cyan"
+
+ctx.fillRect(60, 80, 70, 20);
+
+ctx.fillStyle="purple";
+
+ctx.fillRect(30, 110, 90, 20);
+
+ctx.fillRect(30, 150, 90, 20);
+
+ctx.fillStyle= "cyan";
+ctx.strokeStyle= "purple";
+ctx.lineWidth=6;
+
+ctx.fillRect(50, 50, 70, 90);
+
+ctx.strokeRect(50, 50, 70, 90);
+
+ var ctx1= myCanvas1.getContext("2d");
+ 
+var y_pos = 0;
+var MyImg = new Image();
+MyImg.src = "https://s2js.com/img/etc/cat_grumpy.png";
+
+function MyTimer () {
+  ctx1.clearRect(0, 0, myCanvas1.width, myCanvas1.height);
+  y_pos = y_pos + 1;
+  ctx1.drawImage(MyImg, 130, y_pos);
+  }
+
+setInterval(MyTimer, );
+
+
+
+
+
+</script>
+
+</body>
+
+</html> 
